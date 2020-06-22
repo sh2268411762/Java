@@ -8,5 +8,7 @@ public class IntIntro
 		int negativeNumber = -54321;
 		System.out.println("int类型变量number的值为：" + number);
 		System.out.println("int类型变量negativeNumber的值为：" + negativeNumber);
+		System.out.println("int 类型数值直接使用：" + 12345);
+		System.out.println("int 类型数值直接使用：" + -1111);
 	}
 }
