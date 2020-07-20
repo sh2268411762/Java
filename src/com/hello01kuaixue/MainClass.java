@@ -3,9 +3,9 @@ package com.hello01kuaixue;
  * public class MainClass { private String desc; public static void
  * main(String[] args) { System.out.print("HELLO!!!"); }
  * 
- * private void oneMethod() { System.out.print("这是一个方法"); }
+ * private void oneMethod() { System.out.print("锟斤拷锟斤拷一锟斤拷锟斤拷锟斤拷"); }
  * 
- * private void twoMethod() { System.out.print("这也是一个方法"); } }
+ * private void twoMethod() { System.out.print("锟斤拷也锟斤拷一锟斤拷锟斤拷锟斤拷"); } }
  */
 
 
@@ -19,14 +19,14 @@ package com.hello01kuaixue;
 
 
 //3.3.1
-//byte类型定义
-public class ByteIntro
+//byte锟斤拷锟酵讹拷锟斤拷
+public class MainClass
 {
 	public static void main(String[] args)
 	{
-		byte number = 55;//定义byte类型变量
-		byte x = 10 + 15 ;//KIANG 25 赋给x
-		System.out.println("byte类型变量number为："+number);
-		System.out.println("byte类型变量x为："+x);
+		byte number = 55;//锟斤拷锟斤拷byte锟斤拷锟酵憋拷锟斤拷
+		byte x = 10 + 15 ;//KIANG 25 锟斤拷锟斤拷x
+		System.out.println("byte锟斤拷锟酵憋拷锟斤拷number为锟斤拷"+number);
+		System.out.println("byte锟斤拷锟酵憋拷锟斤拷x为锟斤拷"+x);
 	}
 }

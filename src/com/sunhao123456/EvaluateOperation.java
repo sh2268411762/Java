@@ -15,7 +15,7 @@ public class EvaluateOperation
 	{
 		int a = 1010;
 		int b = 33;
-		int c = a+ b;
+		int c = a + b;
 		System.out.println("赋值运算符 c = a + b 的结果是：" + c);
 	}
 }
