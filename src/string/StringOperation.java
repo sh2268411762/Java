@@ -3,6 +3,10 @@
  */
 package string;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 /**
 *  @Description     字符串常见操作
 *  @author          孙豪
@@ -175,9 +179,87 @@ public class StringOperation
 		System.out.println("\n");
 		
 		//9、字符串大小写转换
+		String str9 = "abcdEFghiJkl";
+		str9 = str9.toLowerCase();
+		System.out.println("将str9中大写字母转换成小写字母:" + str9);
+		str9 = "abcdEFghiJkl";
+		str9 = str9.toUpperCase();
+		System.out.println("将str9中小写字母转换成大写字母:" + str9);
+		//将首字母变为大写
+		str9 = "abcdEFghiJkl";
+		str9 = str9.substring(0, 1).toUpperCase() + str9.substring(1, str9.length());
+		System.out.println("将str9首字母大写：" + str9);
+		System.out.println("\n");
+		
 		
 		//10、字符串比较
+		String Str1 = new String("1234");
+		String Str2 = Str1;
+		String Str3 = new String("1234");
+		boolean flag;
+		flag = Str1.equals(Str2);
+		System.out.println("Str1与Str2比较：" + flag);//t
+		flag = Str1.equals(Str3);
+		System.out.println("Str1与Str3比较：" + flag);//t
+		flag = Str1.equals(null);
+		System.out.println("Str1与null比较：" + flag);//f
+		//使用== 与 equals 的区别
+		flag = Str1 == Str2;
+		System.out.println("Str1与Str2比较（==）：" + flag);//t
+		Str2 = new String("1234");//将Str2指向一个内容相同但内存地址不同的字符串
+		flag = Str1 == Str2;
+		System.out.println("Str1与Str2比较（==）：" + flag);//f
+		Str1 = "1234";
+		Str2 = "1234";
+		flag = Str1 == Str2;//Str1,Str2指向同一个字符串常量
+		System.out.println("Str1与Str2比较（==）：" + flag);//t
+		//不考虑大小写
+		String Str4 = "abcdEf";
+		String Str5 = "ABCDeF";
+		flag = Str4.equalsIgnoreCase(Str5);
+		System.out.println("Str4与Str5用equalsIgnore比较：" + flag);
+		flag = Str4.equals(Str5);
+		System.out.println("Str4与Str5用equals比较：" + flag);
+		System.out.println("\n");
+		
+		
 		//11、字符串格式化输出
+		String str11 = "眼前人已非彼时人";
+		int j = 10;
+		System.out.println(String.format("整形转换：%d", j));
+		System.out.println(String.format("字符串转换：%s+%d", str11,j));
+		//日期转换符
+		Date date = new Date();
+		System.out.println(String.format("时间：%tY年%tB%td日%tA%tH:%tM:%tS", date,date,date,date,date,date,date));
+		System.out.println("\n");
+		
+		
 		//12、其他字符串操作
+		//（1）contains(CharSequence s)
+		System.out.println(str11 + "，是否包含\"前\":" + str11.contains("前"));
+		System.out.println(str11 + "，是否包含\"后\":" + str11.contains("后"));
+		//（2）compareTo(String anotherString)
+		String a = "A",b = "B";
+		System.out.println("按照ASCII码前后顺序对比A和B：" + a.compareTo(b));
+		System.out.println("按照ASCII码前后顺序对比B和A：" + b.compareTo(a));
+		//（3）hashCode()
+		String str12 = "零壹快学";
+		System.out.println(str12 + "的哈希值为：" + str12.hashCode());//空字符串的哈希值为0
+		//（4）toCharArray()
+		String str13 = "终是紫霞错了情，三生三世亦无情";
+		char[] str13Chars = str13.toCharArray();
+		System.out.println("将字符串转换为字符数组：");
+		for(char c:str13Chars)
+		{
+			System.out.print(c);
+		}
+		//（5）toString()
+		System.out.println("转成字符串：" + str13.toString());
+		List<String> str13List = new ArrayList<>();
+		str13List.add("衡");
+		str13List.add("欲");
+		str13List.add("梦");
+		str13List.add("星");
+		System.out.println("集合类转换成字符串：" + str13List.toString());
 	}
 }
