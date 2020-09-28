@@ -16,6 +16,7 @@ public class Person_1
 		int age;
 		float height;
 		float weight;
+		public String name_1 = "名字";
 		
 		public Person_1()  //构造方法1
 		{
@@ -42,5 +43,18 @@ public class Person_1
 		{
 			Person_1 p1 = new Person_1("zs",22,187.3f,67.0f);
 			p1.printPerson_1();
+		}
+		
+		public void print()
+		{
+			System.out.println("继承父类的方法");
+		}
+		public final void finalPrint()   //final修饰方法
+		{
+			System.out.println("继承父类的final方法");
+		}
+		private final void privatePrint()
+		{
+			System.out.println("不能被继承的final方法");
 		}
 }
