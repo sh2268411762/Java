@@ -53,7 +53,7 @@ public class UseTreeSet
 		p1.add(new Person(22,"张三"));
 		
 		Iterator<Person> p2 = p1.iterator();
-		System.out.println("按照年龄排序：");
+		System.out.println("\n按照年龄排序：");
 		while(p2.hasNext())
 		{
 			Person p3 = p2.next();
