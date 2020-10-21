@@ -40,10 +40,12 @@ public class DateFormatDemo
 			
 			date = new Date();
 			System.out.println("将Date对象转为字符串：" + d.format(date));
+
 		} catch (Exception e)
 		{
 			// TODO 自动生成的 catch 块
 			e.printStackTrace();
 		}
+		System.exit(0);
 	}
 }
