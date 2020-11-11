@@ -25,6 +25,9 @@ public class DateDemo
 		System.out.println("比较两个日期：" + d1.compareTo(d1));
 		System.out.println("比较两个日期是否相同：" + d1.equals(d2));
 		System.out.println("d1的哈希值：" + d1.hashCode());
+		
+		System.out.println();
+		fun();
 	}
 	
 	
